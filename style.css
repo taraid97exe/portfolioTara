@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css2?family=Helvetica&display=swap);
+*{
+    font-family: 'Helvetica';
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #16835f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.name-company{
+    text-transform: uppercase;
+    width: auto;
+    cursor: pointer;
+    margin: 12px 24px;
+    padding: 8px 16px;
+    font-weight: 700;
+    margin-left: 25px;
+    font-size: 120%;
+}
+.nav-bar-items{
+    list-style: none;
+    display: flex;
+    margin-right: 25px;
+}
+.nav-bar li{
+    padding: 16px 16px;
+}
+.nav-bar-items li a{
+    font-weight: 700;
+    font-size: 80%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+a:hover, a:active, a:focus{
+    color: lightblue;
+    outline: none;
+}
+p{
+    text-align: justify;
+}
+.logo-icon{
+    width: 40px;
+}
+.content-about{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    padding: 0px 32px;
+}
+#profile-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 140px;
+    margin: 0 1.5%;
+}
+#profile-picture{
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.title-1{
+    margin: 20px 0px;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #16835f;
+}
+.subtitle{
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin: 24px 0;
+}
+#bio{
+    margin-left: 96px;
+}
+.contact-container a{
+    margin-right: 16px;
+}
+.portfolio-card{
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 1.5%;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.portfolio-picture{
+    height: 250px;
+    width: 40%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+.portfolio-card div{
+    width: 60%;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.title-2{
+    padding-top: 96px;
+    margin-left: 1.5%;
+    font-size: 1.5em;
+    color: #16835f;
+    font-weight: 700;
+}
+.title-3{
+    color: #16835f;
+    margin: 16px 0px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.title-4{
+    font-size: 1em;
+    margin: 8px 0px;
+}
+.description{
+    line-height: 1.5;
+}
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+.skill-card{
+    flex: 0 1 22%;
+    background-color: white;
+    margin: 16px 1.5%;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.skill-picture{
+    height: auto;
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 16px;
+}
+.skill-title{
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 700;
+    color: #16835f;
+}
+.experience-card{
+    margin: 32px 1.5%;
+    padding: 16px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.education-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.education-card{
+    flex: 0 1 25%;
+    margin: 16px 1.5%;
+    padding: 16px 16px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.e-certificate-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 96px;
+}
+.e-certificate-card{
+    flex: 0 1 20%;
+    margin: 16px 1.5%;
+    padding: 16px 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+body{
+    background-color: #dddd;
+}
+footer{
+    text-align: center;
+    padding: 32px;
+    background-color: #16835f;
+    color: black;
+}
+@media screen and (max-width: 700px) {
+    header{
+        position: static;
+        flex-direction: column;
+    }
+    .nav-bar-items{
+        flex-direction: column;
+        text-align: center;
+    }
+    #profile-container{
+        padding-top: 32px;
+        flex-direction: column;
+    }
+    #bio{
+        margin: 16px;
+        padding: 16px 0;
+    }
+    .portfolio-card{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .portfolio-card div{
+        width: 100%;
+        margin: 16px;
+    }
+    .portfolio-picture{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width:550px) {
+    .skill-card{
+        flex: 0 1 47%;
+    }
+    .education-card{
+        flex: 0 1 97%;
+    }
+}
